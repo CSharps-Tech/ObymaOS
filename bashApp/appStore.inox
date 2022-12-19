@@ -1,0 +1,15 @@
+include "installer", "progress", "database"
+profile start [Array, Array]{
+   progress start == 0>100(1=1)
+   database connect "https://appstore.lnx.in"
+   text button add "Welcome to Appstore In ObymaOS, By using the world, you accept rules of Appstore" = ok --- [ ] << I have been accepted 
+}
+menuStore = [card: database img, appname: database nameapp, size: database size]
+ menu = [ device-width, device-height ]
+menuTitle = "Application"
+genre = {
+  "Games",
+  "application",
+  "APT"
+}
+install request++i == tap button "Install" => progress start == 0>100(size)
