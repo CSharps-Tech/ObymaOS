@@ -1,0 +1,19 @@
+\ Boot Screen
+ - require 'text:boot'
+create animation {
+ 1.0 == "...."
+ 1.5 == "'..."
+ 2.0 == ".'.."
+ 2.5 == "..'."
+ 3.0 == "...'"
+ 3.5 == "...."
+loop = 4s > 9s
+}
+create animationLogin {
+ account == "Please select an account to login"
+ noaccount == "ObymaOS need account to login!"
+}
+if booterror:
+ create error in text:boot {
+  msgAdd "Something went wrong with OS, Please wait for while restart"
+}
