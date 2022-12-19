@@ -1,0 +1,6 @@
+\ Animation Loaders
+ - require 'gif:load/257'
+create loader {
+ 1.0 == load:gif 
+ 2.5 == exit loader
+}
