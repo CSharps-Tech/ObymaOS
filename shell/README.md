@@ -1,1 +1,0 @@
-# ObymaOS Shell
