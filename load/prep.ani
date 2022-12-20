@@ -1,0 +1,6 @@
+\ Prepare
+ - require 'gif:load/833'
+create prep {
+ 1.1 == load:gif
+ time == exit prep
+}
